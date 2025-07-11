@@ -30,6 +30,7 @@ class Menu {
                 exitProcess(0)
             } else {
                 println("Menu not available")
+                return
             }
         } else if (choose == 2) {
             //add balance controller
@@ -37,10 +38,12 @@ class Menu {
             showMenu()
         } else if (choose == 3) {
             //controller add expenses
+            Expense().showTrx()
         } else if (choose == 4) {
             exitProcess(0)
         } else {
             println("Menu not available")
+            return
         }
     }
 
